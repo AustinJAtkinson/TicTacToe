@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body class="container">
+    <div class="row">
+        <h1 class="h1 text-center">Tic Tac Toe</h1>
+    </div>
+
+    <div id="players-turn-div" class="row text-center">
+        <p>It is Player <span id="players-turn"></span>'s turn!</p>
+    </div>
+    <div id="winner-alert" class="alert alert-success text-center" role="alert" hidden></div>
+
+    <div id="tie-alert" class="alert alert-warning text-center" role="alert" hidden></div>
+
+
+    <div class="bg-light" id='TicTacToe'>
+        <div class="row">
+            <div class="row" style="min-height: 60px;">
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-00"></button>
+                </div>
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-01"></button>
+                </div>
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-02"></button>
+                </div>
+            </div>
+            <div class="row" style="min-height: 60px;">
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-03"></button>
+                </div>
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-04"></button>
+                </div>
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-05"></button>
+                </div>
+            </div>
+            <div class="row" style="min-height: 60px;">
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-06"></button>
+                </div>
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-07"></button>
+                </div>
+                <div class="card col-4 text-center">
+                    <button class="card-body btn btn-dark" id="cell-08"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <button class="btn btn-primary" id="reset" type="reset">Reset</button>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="TicTacToe.js"></script>
+</body>
+
+</html>
